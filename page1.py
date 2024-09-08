@@ -51,7 +51,7 @@ def run():
                     st.dataframe(app_reviews_df)
 
                     # Automatically save the DataFrame to a CSV file with a timestamp and package name
-                    output_dir = "menu/pages/hasil/scraped/"
+                    output_dir = "scraped/"
                     os.makedirs(output_dir, exist_ok=True)
 
                     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")

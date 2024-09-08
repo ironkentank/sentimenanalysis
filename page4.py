@@ -77,7 +77,7 @@ def run():
     base_path = os.path.dirname(__file__)
     preprocessing_folder_path = os.path.join(base_path, 'hasil/preprocessed/')
     sentiment_folder_path = os.path.join(base_path, 'hasil/sentimen/')
-    scraped_folder_path = os.path.join(base_path, 'hasil/scraped/')
+    scraped_folder_path = os.path.join(base_path, 'scraped/')
     visualisasi_folder_path = os.path.join(base_path, 'hasil/visualisasi/')
 
     # Display files 

@@ -113,8 +113,8 @@ sympy==1.13.2
 tenacity==8.5.0
 tensorboard==2.17.0
 tensorboard-data-server==0.7.2
-tensorflow==2.17.0
-tensorflow-intel==2.17.0
+tensorflow
+tensorflow-intel
 termcolor==2.4.0
 tf_keras==2.17.0
 threadpoolctl==3.5.0

@@ -70,7 +70,7 @@ def display_folder_files(folder_path, title):
         st.write("Path folder tidak valid.")
 
 # Fungsi main sebagai titik masuk modul
-def main():
+def run():
     st.title('Penyimpanan Arsip')
 
     # Path folder yang akan dibaca
@@ -87,4 +87,4 @@ def main():
     display_folder_files(visualisasi_folder_path, 'Files in Visualisasi Folder')
 
 if __name__ == "__main__":
-    main()
+    run()

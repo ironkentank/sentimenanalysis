@@ -8,7 +8,7 @@ from page3 import run as page3_run
 from page4 import run as page4_run
 
 # inisialiasi nltk dan nlp untuk analisis sentimen dari pipeline
-nltk.download('punkt')
+nltk.download('punkt_tab')
 nltk.download('stopwords')
 #nlp = pipeline('sentiment-analysis')
 

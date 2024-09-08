@@ -7,6 +7,8 @@ from page2 import run as page2_run
 from page3 import run as page3_run
 from page4 import run as page4_run
 
+nltk.download('punkt')
+
 # Ensure the 'punkt' tokenizer data is downloaded
 def ensure_nltk_data():
     try:

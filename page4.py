@@ -75,10 +75,10 @@ def run():
 
     # Path folder yang akan dibaca
     base_path = os.path.dirname(__file__)
-    preprocessing_folder_path = os.path.join(base_path, 'hasil/preprocessed/')
-    sentiment_folder_path = os.path.join(base_path, 'hasil/sentimen/')
+    preprocessing_folder_path = os.path.join(base_path, 'preprocessed/')
+    sentiment_folder_path = os.path.join(base_path, 'sentimen/')
     scraped_folder_path = os.path.join(base_path, 'scraped/')
-    visualisasi_folder_path = os.path.join(base_path, 'hasil/visualisasi/')
+    visualisasi_folder_path = os.path.join(base_path, 'visualisasi/')
 
     # Display files 
     display_folder_files(scraped_folder_path, 'Files in Scraped Folder')

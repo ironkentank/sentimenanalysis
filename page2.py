@@ -25,7 +25,7 @@ nltk.download('stopwords')
 nlp = pipeline('sentiment-analysis')
 
 # layout streamlit
-def main():
+def run():
     st.title("Analisis Sentimen Ulasan Aplikasi Google Play Store")
     st.write("Upload file hasil scraping untuk dianalisis")
 
@@ -270,4 +270,4 @@ def perform_naive_bayes_classification(df, app_title):
 
 
 if __name__ == "__main__":
-    main()
+    run()

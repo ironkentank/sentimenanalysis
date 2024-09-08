@@ -5,7 +5,6 @@ from page1 import run as page1_run
 from page2 import run as page2_run
 from page3 import run as page3_run
 from page4 import run as page4_run
-from page5 import run as page5_run
 
 # Set up the page configuration
 st.set_page_config(
@@ -30,5 +29,3 @@ elif page == "Page 3":
     page3_run()
 elif page == "Page 4":
     page4_run()
-elif page == "Page 5":
-    page5_run()

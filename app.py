@@ -1,5 +1,11 @@
 import streamlit as st
 
+# Importing page functions
+from page1 import run as page1_run
+from page2 import run as page2_run
+from page3 import run as page3_run
+from page4 import run as page4_run
+
 # Set up the page configuration
 st.set_page_config(
     page_title="Multi-Page App",
@@ -16,15 +22,10 @@ if page == "Home":
     st.title("Selamat Datang")
     st.write("Ini adalah halaman utama.")
 elif page == "Page 1":
-    st.title("Halaman 1")
-    st.write("Ini adalah halaman pertama.")
+    page1_run()
 elif page == "Page 2":
-    st.title("Halaman 2")
-    st.write("Ini adalah halaman kedua.")
+    page2_run()
 elif page == "Page 3":
-    st.title("Halaman 3")
-    st.write("Ini adalah halaman ketiga.")
+    page3_run()
 elif page == "Page 4":
-    st.title("Halaman 4")
-    st.write("Ini adalah halaman keempat.")
-
+    page4_run()

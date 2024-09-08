@@ -165,7 +165,7 @@ def transform(df, app_title):
 
     try:
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        output_dir = "menu/pages/hasil/preprocessed/"
+        output_dir = "preprocessed/"
         os.makedirs(output_dir, exist_ok=True)
 
         output_file = os.path.join(output_dir, f"{timestamp}_{app_title}_preprocessed_data.csv")
@@ -194,7 +194,7 @@ def create_wordcloud(text_column, app_title):
     st.pyplot(plt)
 
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    output_dir = "menu/pages/hasil/visualisasi/"
+    output_dir = "visualisasi/"
     os.makedirs(output_dir, exist_ok=True)
 
     wordcloud_file = os.path.join(output_dir, f"{timestamp}_{app_title}_wordcloud.png")
@@ -250,8 +250,8 @@ def perform_naive_bayes_classification(df, app_title):
 
     # menyimpan file
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    output_dir = "menu/pages/hasil/sentimen/"
-    output_dir2 = "menu/pages/hasil/visualisasi/"
+    output_dir = "sentimen/"
+    output_dir2 = "visualisasi/"
     os.makedirs(output_dir, exist_ok=True)
     
     # menyimpan classification report

@@ -2,7 +2,7 @@ import streamlit as st
 from transformers import pipeline
 from deep_translator import GoogleTranslator
 
-def main():
+def run():
     # Cek apakah PyTorch terinstal
     try:
         import torch
@@ -46,4 +46,4 @@ def main():
             st.warning("Masukkan kalimat untuk dianalisis.")
 
 if __name__ == "__main__":
-    main()
+    run()

@@ -1,10 +1,21 @@
 import streamlit as st
+import nltk
 
 # Importing page functions
 from page1 import run as page1_run
 from page2 import run as page2_run
 from page3 import run as page3_run
 from page4 import run as page4_run
+
+def ensure_nltk_data():
+    try:
+        nltk.data.find('tokenizers/punkt')
+        nltk.data.find('corpora/stopwords')
+    except LookupError:
+        nltk.download('punkt')
+        nltk.download('stopwords')
+
+ensure_nltk_data()
 
 # Set up the page configuration
 st.set_page_config(

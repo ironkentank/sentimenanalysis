@@ -15,17 +15,24 @@ st.set_page_config(
 
 # Sidebar menu
 st.sidebar.title("Menu")
-page = st.sidebar.radio("Pilih Halaman", ["Home", "Page 1", "Page 2", "Page 3", "Page 4"])
+page = st.sidebar.radio("Pilih Halaman", ["🏠 Home", "✍🏼 Scraping Data", "🔍 Analisis_Sentimen", "⚖️ Prediksi_Teks", "📃 Arsip"])
 
 # Define the page content based on the selection
-if page == "Home":
+if page == "🏠 Home":
     st.title("Selamat Datang")
-    st.write("Ini adalah halaman utama.")
-elif page == "Page 1":
+    st.write("""
+    Ini adalah halaman utama aplikasi analisis sentimen Anda.
+    Gunakan menu di sebelah kiri untuk mengakses fitur-fitur berikut:
+    - **Analisis Sentimen**: Melakukan analisis sentimen menggunakan metode Naive Bayes.
+    - **Arsip**: Melihat arsip data yang sudah dianalisis.
+    - **Prediksi Teks**: Melakukan prediksi sentimen pada teks baru.
+    - **Scraping Data**: Mengumpulkan data dari web untuk dianalisis.
+    """)
+elif page == "✍🏼 Scraping Data":
     page1_run()
-elif page == "Page 2":
+elif page == "🔍 Analisis_Sentimen":
     page2_run()
-elif page == "Page 3":
+elif page == "⚖️ Prediksi_Teks":
     page3_run()
-elif page == "Page 4":
+elif page == "📃 Arsip":
     page4_run()

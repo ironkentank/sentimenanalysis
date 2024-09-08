@@ -10,7 +10,7 @@ from page4 import run as page4_run
 # inisialiasi nltk dan nlp untuk analisis sentimen dari pipeline
 nltk.download('punkt')
 nltk.download('stopwords')
-nlp = pipeline('sentiment-analysis')
+#nlp = pipeline('sentiment-analysis')
 
 # Ensure the 'punkt' tokenizer data is downloaded
 def ensure_nltk_data():

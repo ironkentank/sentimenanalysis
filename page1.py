@@ -24,7 +24,7 @@ def scrape_reviews(app_packages, count):
                 app_reviews.extend(rvs)
     return pd.DataFrame(app_reviews)
 
-def main():
+def run():
     st.title("Scraping Ulasan Aplikasi di Google Play Store")
     
     package_name = st.text_input("Masukkan nama package aplikasi dari Play Store:")
@@ -66,4 +66,4 @@ def main():
             st.warning("Mohon masukkan nama package aplikasi di Play Store.")
 
 if __name__ == "__main__":
-    main()
+    run()

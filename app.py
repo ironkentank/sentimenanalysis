@@ -7,14 +7,13 @@ from page2 import run as page2_run
 from page3 import run as page3_run
 from page4 import run as page4_run
 
+# Ensure the 'punkt' tokenizer data is downloaded
 def ensure_nltk_data():
     try:
         nltk.data.find('tokenizers/punkt')
-        nltk.data.find('corpora/stopwords')
     except LookupError:
         nltk.download('punkt')
-        nltk.download('stopwords')
-
+        
 ensure_nltk_data()
 
 # Set up the page configuration

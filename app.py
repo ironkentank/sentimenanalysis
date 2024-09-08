@@ -12,15 +12,6 @@ nltk.download('punkt')
 nltk.download('stopwords')
 #nlp = pipeline('sentiment-analysis')
 
-# Ensure the 'punkt' tokenizer data is downloaded
-def ensure_nltk_data():
-    try:
-        nltk.data.find('tokenizers/punkt')
-    except LookupError:
-        nltk.download('punkt')
-        
-ensure_nltk_data()
-
 # Set up the page configuration
 st.set_page_config(
     page_title="Multi-Page App",

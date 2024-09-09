@@ -81,10 +81,10 @@ def run():
     visualisasi_folder_path = os.path.join(base_path, 'visualisasi/')
 
     # Display files 
-    display_folder_files(scraped_folder_path, 'Files in Scraped Folder')
-    display_folder_files(preprocessing_folder_path, 'Files in Preprocessing Folder')
-    display_folder_files(sentiment_folder_path, 'Files in Sentiment Folder')
-    display_folder_files(visualisasi_folder_path, 'Files in Visualisasi Folder')
+    display_folder_files(scraped_folder_path, 'Scraped')
+    display_folder_files(preprocessing_folder_path, 'Preprocessed')
+    display_folder_files(sentiment_folder_path, 'Sentimen')
+    display_folder_files(visualisasi_folder_path, 'Visualisasi')
 
 if __name__ == "__main__":
     run()
